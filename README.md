@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# MathMagicians
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
-## Available Scripts
+- Make simple calculations;
+- Read a random math-related quote.
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML
+- JavaScript
+- CSS
+- Git
+- React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Live Demo (if available)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link](https://elsonotake.github.io/math-magicians/dist/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy, follow these simple steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Web browser installed
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Cloning a repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- On GitHub.com, navigate to the main page of the repository;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Above the list of files, click "Code" button;
 
-## Learn More
+- Copy the URL to clone the repository. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/math-magicians.git`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/math-magicians.git`
 
-### Code Splitting
+  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/math-magicians`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Open Terminal;
 
-### Analyzing the Bundle Size
+- Change the current working directory to the location where you want the cloned directory;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Type `git clone`, and then paste the URL you copied earlier;
 
-### Making a Progressive Web App
+- run `npm install` to install all dependencies;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- run `npm run start` to start the application locally.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+👤 **Elson Otake**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- GitHub: [@elsonotake](https://github.com/elsonotake)
+- Twitter: [@elsonotake](https://twitter.com/elsonotake)
+- LinkedIn: [Elson Otake](https://linkedin.com/in/elson-otake-0b5b9138)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Microverse
+- W3Schools
+- Stack Overflow
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
