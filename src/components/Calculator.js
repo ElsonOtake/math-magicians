@@ -18,21 +18,21 @@ class Calculator extends React.Component {
         <tbody>
           <tr>
             <td>AC</td>
-            <td>&plusmn;</td>
+            <td>±</td>
             <td>%</td>
-            <td className="orange">&divide;</td>
+            <td className="orange">÷</td>
           </tr>
           <tr>
             <td>7</td>
             <td>8</td>
             <td>9</td>
-            <td className="orange">&times;</td>
+            <td className="orange">×</td>
           </tr>
           <tr>
             <td>4</td>
             <td>5</td>
             <td>6</td>
-            <td className="orange">&minus;</td>
+            <td className="orange">−</td>
           </tr>
           <tr>
             <td>1</td>
@@ -42,7 +42,7 @@ class Calculator extends React.Component {
           </tr>
           <tr>
             <td colSpan="2">0</td>
-            <td>.</td>
+            <td>•</td>
             <td className="orange">=</td>
           </tr>
         </tbody>
