@@ -12,7 +12,9 @@ td {
   cursor: pointer;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #aaa;
   border-collapse: collapse;
 }
