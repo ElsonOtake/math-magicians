@@ -7,10 +7,14 @@ class KeyButton extends Component {
     this.state = {};
   }
 
+  keyClicked = (event) => {
+    console.log(event.target.textContent);
+  }
+
   render() {
     const { keyValue } = this.props;
     return (
-      <button type="button">
+      <button type="button" onClick={this.keyClicked}>
         {keyValue}
       </button>
     );
