@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import KeyButton from './KeyButton';
 
 class KeyboardRow extends React.Component {
   constructor(props) {
@@ -13,10 +14,10 @@ class KeyboardRow extends React.Component {
     } = this.props;
     return (
       <tr>
-        <td>{col1}</td>
-        <td>{col2}</td>
-        <td>{col3}</td>
-        <td className="orange">{col4}</td>
+        <td><KeyButton keyValue={col1} /></td>
+        <td><KeyButton keyValue={col2} /></td>
+        <td><KeyButton keyValue={col3} /></td>
+        <td className="orange"><KeyButton keyValue={col4} /></td>
       </tr>
     );
   }
