@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import KeyButton from './KeyButton';
 
-class KeyboardLastRow extends React.Component {
+class KeyboardLastRow extends Component {
   constructor(props) {
     super(props);
     this.state = {};
