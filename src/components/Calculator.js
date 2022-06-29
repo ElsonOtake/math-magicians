@@ -1,5 +1,7 @@
 import React from 'react';
 import './Calculator.css';
+import KeyboardRow from './KeyboardRow';
+import KeyboardLastRow from './KeyboardLastRow';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -16,35 +18,16 @@ class Calculator extends React.Component {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>AC</td>
-            <td>±</td>
-            <td>%</td>
-            <td className="orange">÷</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td className="orange">×</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td className="orange">−</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td className="orange">+</td>
-          </tr>
-          <tr>
+          <KeyboardRow col1="AC" col2="±" col3="%" col4="÷" />
+          <KeyboardRow col1="7" col2="8" col3="9" col4="x" />
+          <KeyboardRow col1="4" col2="5" col3="6" col4="-" />
+          <KeyboardRow col1="1" col2="2" col3="3" col4="+" />
+          <KeyboardLastRow col1="0" col2="•" col3="=" />
+          {/* <tr>
             <td colSpan="2">0</td>
             <td>•</td>
             <td className="orange">=</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     );
