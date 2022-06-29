@@ -9,32 +9,24 @@ class KeyboardRow extends Component {
   }
 
   render() {
-    const {
-      col1, col2, col3, col4,
-    } = this.props;
+    const { data } = this.props;
     return (
       <tr>
-        <td><KeyButton keyValue={col1} /></td>
-        <td><KeyButton keyValue={col2} /></td>
-        <td><KeyButton keyValue={col3} /></td>
-        <td className="orange"><KeyButton keyValue={col4} /></td>
+        <td><KeyButton keyValue={data[0]} /></td>
+        <td><KeyButton keyValue={data[1]} /></td>
+        <td><KeyButton keyValue={data[2]} /></td>
+        <td className="orange"><KeyButton keyValue={data[3]} /></td>
       </tr>
     );
   }
 }
 
 KeyboardRow.defaultProps = {
-  col1: '',
-  col2: '',
-  col3: '',
-  col4: '',
+  data: [],
 };
 
 KeyboardRow.propTypes = {
-  col1: PropTypes.string,
-  col2: PropTypes.string,
-  col3: PropTypes.string,
-  col4: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default KeyboardRow;
