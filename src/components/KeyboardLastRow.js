@@ -9,29 +9,23 @@ class KeyboardLastRow extends Component {
   }
 
   render() {
-    const {
-      col1, col2, col3,
-    } = this.props;
+    const { data } = this.props;
     return (
       <tr>
-        <td colSpan="2"><KeyButton keyValue={col1} /></td>
-        <td><KeyButton keyValue={col2} /></td>
-        <td className="orange"><KeyButton keyValue={col3} /></td>
+        <td colSpan="2"><KeyButton keyValue={data[0]} /></td>
+        <td><KeyButton keyValue={data[1]} /></td>
+        <td className="orange"><KeyButton keyValue={data[2]} /></td>
       </tr>
     );
   }
 }
 
 KeyboardLastRow.defaultProps = {
-  col1: '',
-  col2: '',
-  col3: '',
+  data: [],
 };
 
 KeyboardLastRow.propTypes = {
-  col1: PropTypes.string,
-  col2: PropTypes.string,
-  col3: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default KeyboardLastRow;
