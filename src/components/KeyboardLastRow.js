@@ -8,13 +8,25 @@ class KeyboardLastRow extends Component {
     this.state = {};
   }
 
+  handleStateChange(e) {
+    const { handleStateChange } = this.props;
+    const { value } = e.target;
+    handleStateChange(value);
+  }
+
   render() {
-    const { data } = this.props;
+    const { data, calc } = this.props;
     return (
       <tr>
-        <td colSpan="2"><KeyButton keyValue={data[0]} /></td>
-        <td><KeyButton keyValue={data[1]} /></td>
-        <td className="orange"><KeyButton keyValue={data[2]} /></td>
+        <td colSpan="2">
+          <KeyButton handleStateChange={this.handleStateChange} calc={calc} keyValue={data[0]} />
+        </td>
+        <td>
+          <KeyButton handleStateChange={this.handleStateChange} calc={calc} keyValue={data[1]} />
+        </td>
+        <td className="orange">
+          <KeyButton handleStateChange={this.handleStateChange} calc={calc} keyValue={data[2]} />
+        </td>
       </tr>
     );
   }
@@ -22,10 +34,14 @@ class KeyboardLastRow extends Component {
 
 KeyboardLastRow.defaultProps = {
   data: [],
+  handleStateChange: () => {},
+  calc: {},
 };
 
 KeyboardLastRow.propTypes = {
   data: PropTypes.arrayOf(PropTypes.string),
+  handleStateChange: PropTypes.func,
+  calc: PropTypes.objectOf(PropTypes.string),
 };
 
 export default KeyboardLastRow;

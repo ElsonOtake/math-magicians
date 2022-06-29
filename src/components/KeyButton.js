@@ -12,22 +12,17 @@ class KeyButton extends Component {
     const { handleStateChange } = this.props;
     const { value } = e.target;
     handleStateChange(value);
-    // this.props.handleStateChange(e.target.value);
   }
 
   render() {
     const {
-      keyValue, total, next, operation,
+      keyValue, calc,
     } = this.props;
-    console.log(total);
     return (
       <button
         type="button"
         onClick={(event) => {
-          const totalProps = total;
-          const nextProps = next;
-          const operationProps = operation;
-          calculate({ totalProps, nextProps, operationProps }, event.target.textContent);
+          this.handleStateChange(calculate({ calc }, event.target.textContent));
         }}
       >
         {keyValue}
@@ -39,17 +34,13 @@ class KeyButton extends Component {
 KeyButton.defaultProps = {
   keyValue: '',
   handleStateChange: () => {},
-  total: '',
-  next: '',
-  operation: '',
+  calc: {},
 };
 
 KeyButton.propTypes = {
   keyValue: PropTypes.string,
   handleStateChange: PropTypes.func,
-  total: PropTypes.string,
-  next: PropTypes.string,
-  operation: PropTypes.string,
+  calc: PropTypes.objectOf(PropTypes.string),
 };
 
 export default KeyButton;

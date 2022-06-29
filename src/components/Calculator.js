@@ -1,8 +1,7 @@
 import React from 'react';
 import './Calculator.css';
 import KeyboardRow from './KeyboardRow';
-// import KeyboardLastRow from './KeyboardLastRow';
-import KeyButton from './KeyButton';
+import KeyboardLastRow from './KeyboardLastRow';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -10,9 +9,9 @@ class Calculator extends React.Component {
     this.handleStateChange = this.handleStateChange.bind(this);
     this.state = {
       calc: {
-        total: 0,
-        next: null,
-        operation: null,
+        total: '2',
+        next: '5',
+        operation: '+',
       },
     };
   }
@@ -33,16 +32,11 @@ class Calculator extends React.Component {
           </tr>
         </thead>
         <tbody>
-          <KeyboardRow data={['AC', '+/-', '%', '÷']} />
-          <KeyboardRow data={['7', '8', '9', 'x']} />
-          <KeyboardRow data={['4', '5', '6', '-']} />
-          <KeyboardRow data={['1', '2', '3', '+']} />
-          {/* <KeyboardLastRow data={['0', '.', '=']} /> */}
-          <tr>
-            <td colSpan="2"><KeyButton handleStateChange={this.handleStateChange} keyValue="0" /></td>
-            <td><KeyButton handleStateChange={this.handleStateChange} keyValue="." /></td>
-            <td className="orange"><KeyButton handleStateChange={this.handleStateChange} keyValue="=" /></td>
-          </tr>
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['AC', '+/-', '%', '÷']} />
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['7', '8', '9', 'x']} />
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['4', '5', '6', '-']} />
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['1', '2', '3', '+']} />
+          <KeyboardLastRow handleStateChange={this.handleStateChange} calc={calc} data={['0', '.', '=']} />
         </tbody>
       </table>
     );
