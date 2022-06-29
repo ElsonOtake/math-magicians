@@ -34,3 +34,12 @@ tr {
 .orange {
   background-color: orange;
 }
+
+button {
+  padding: 1rem;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
