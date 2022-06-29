@@ -19,6 +19,7 @@ class KeyButton extends Component {
     const {
       keyValue, total, next, operation,
     } = this.props;
+    console.log(total);
     return (
       <button
         type="button"
