@@ -1,50 +1,42 @@
 import React from 'react';
 import './Calculator.css';
+import KeyboardRow from './KeyboardRow';
+import KeyboardLastRow from './KeyboardLastRow';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.handleStateChange = this.handleStateChange.bind(this);
+    this.state = {
+      calc: {
+        total: null,
+        next: null,
+        operation: null,
+      },
+    };
+  }
+
+  handleStateChange(newCalc) {
+    const calcState = { calc: newCalc };
+    this.setState(calcState);
   }
 
   render() {
+    const { calc } = this.state;
+    const { next, total } = calc;
     return (
       <table>
         <thead>
           <tr>
-            <th className="total" colSpan="4">0</th>
+            <th className="total" colSpan="4">{ next || total }</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>AC</td>
-            <td>±</td>
-            <td>%</td>
-            <td className="orange">÷</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td className="orange">×</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td className="orange">−</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td className="orange">+</td>
-          </tr>
-          <tr>
-            <td colSpan="2">0</td>
-            <td>•</td>
-            <td className="orange">=</td>
-          </tr>
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['AC', '+/-', '%', '÷']} />
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['7', '8', '9', 'x']} />
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['4', '5', '6', '-']} />
+          <KeyboardRow handleStateChange={this.handleStateChange} calc={calc} data={['1', '2', '3', '+']} />
+          <KeyboardLastRow handleStateChange={this.handleStateChange} calc={calc} data={['0', '.', '=']} />
         </tbody>
       </table>
     );
