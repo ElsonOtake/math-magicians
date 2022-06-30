@@ -17,7 +17,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://elsonotake.github.io/math-magicians/dist/)
+[Live Demo Link](https://elsonotake.github.io/math-magicians/)
 
 
 ## Getting Started
