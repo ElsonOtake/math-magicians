@@ -28,7 +28,7 @@ class Calculator extends React.Component {
       <table>
         <thead>
           <tr>
-            <th className="total" colSpan="4">{ next || total }</th>
+            <th className="total" colSpan="4">{ next || total || 0 }</th>
           </tr>
         </thead>
         <tbody>
