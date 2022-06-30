@@ -5,13 +5,12 @@ import KeyButton from './KeyButton';
 class KeyboardLastRow extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.handleStateChange = this.handleStateChange.bind(this);
   }
 
-  handleStateChange(e) {
+  handleStateChange(calc) {
     const { handleStateChange } = this.props;
-    const { value } = e.target;
-    handleStateChange(value);
+    handleStateChange(calc);
   }
 
   render() {

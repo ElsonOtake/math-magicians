@@ -8,10 +8,9 @@ class KeyboardRow extends Component {
     this.handleStateChange = this.handleStateChange.bind(this);
   }
 
-  handleStateChange(e) {
+  handleStateChange(calc) {
     const { handleStateChange } = this.props;
-    const { value } = e.target;
-    handleStateChange(value);
+    handleStateChange(calc);
   }
 
   render() {

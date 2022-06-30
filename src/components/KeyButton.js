@@ -8,10 +8,9 @@ class KeyButton extends Component {
     this.handleStateChange = this.handleStateChange.bind(this);
   }
 
-  handleStateChange(e) {
+  handleStateChange(calc) {
     const { handleStateChange } = this.props;
-    const { value } = e.target;
-    handleStateChange(value);
+    handleStateChange(calc);
   }
 
   render() {
@@ -22,7 +21,7 @@ class KeyButton extends Component {
       <button
         type="button"
         onClick={(event) => {
-          this.handleStateChange(calculate({ calc }, event.target.textContent));
+          this.handleStateChange(calculate(calc, event.target.textContent));
         }}
       >
         {keyValue}

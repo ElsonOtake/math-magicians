@@ -9,26 +9,27 @@ class Calculator extends React.Component {
     this.handleStateChange = this.handleStateChange.bind(this);
     this.state = {
       calc: {
-        total: '2',
-        next: '5',
-        operation: '+',
+        total: null,
+        next: null,
+        operation: null,
       },
     };
   }
 
-  handleStateChange() {
-    const { calc } = this.state;
-    this.setState(() => ({ ...calc }));
+  handleStateChange(newCalc) {
+    // const { calc } = this.state;
+    const calcState = { calc: newCalc };
+    this.setState(calcState);
   }
 
   render() {
     const { calc } = this.state;
-    const { total } = calc;
+    const { next, total } = calc;
     return (
       <table>
         <thead>
           <tr>
-            <th className="total" colSpan="4">{total}</th>
+            <th className="total" colSpan="4">{ next || total }</th>
           </tr>
         </thead>
         <tbody>
