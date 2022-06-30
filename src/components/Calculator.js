@@ -17,7 +17,6 @@ class Calculator extends React.Component {
   }
 
   handleStateChange(newCalc) {
-    // const { calc } = this.state;
     const calcState = { calc: newCalc };
     this.setState(calcState);
   }
