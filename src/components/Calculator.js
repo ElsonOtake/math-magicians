@@ -28,7 +28,7 @@ const Calculator = () => {
           <KeyboardRow handleStateChange={handleStateChange} data={['7', '8', '9', 'x']} />
           <KeyboardRow handleStateChange={handleStateChange} data={['4', '5', '6', '-']} />
           <KeyboardRow handleStateChange={handleStateChange} data={['1', '2', '3', '+']} />
-          <KeyboardLastRow handleStateChange={handleStateChange} data={['0', '.', '=']} />
+          <KeyboardRow handleStateChange={handleStateChange} data={['0', '.', '=']} />
         </tbody>
       </table>
     </UserContext.Provider>
@@ -36,22 +36,39 @@ const Calculator = () => {
   );
 };
 
-const KeyboardRow = ({ handleStateChange, data }) => (
-  <tr>
-    <td>
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[0]} />
-    </td>
-    <td>
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[1]} />
-    </td>
-    <td>
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[2]} />
-    </td>
-    <td className="orange">
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[3]} />
-    </td>
-  </tr>
-);
+const KeyboardRow = ({ handleStateChange, data }) => {
+  if (data.length === 4) {
+    return (
+      <tr>
+        <td>
+          <KeyButton handleStateChange={handleStateChange} keyValue={data[0]} />
+        </td>
+        <td>
+          <KeyButton handleStateChange={handleStateChange} keyValue={data[1]} />
+        </td>
+        <td>
+          <KeyButton handleStateChange={handleStateChange} keyValue={data[2]} />
+        </td>
+        <td className="orange">
+          <KeyButton handleStateChange={handleStateChange} keyValue={data[3]} />
+        </td>
+      </tr>
+    );
+  }
+  return (
+    <tr>
+      <td colSpan="2">
+        <KeyButton handleStateChange={handleStateChange} keyValue={data[0]} />
+      </td>
+      <td>
+        <KeyButton handleStateChange={handleStateChange} keyValue={data[1]} />
+      </td>
+      <td className="orange">
+        <KeyButton handleStateChange={handleStateChange} keyValue={data[2]} />
+      </td>
+    </tr>
+  );
+};
 
 KeyboardRow.defaultProps = {
   data: [],
@@ -59,30 +76,6 @@ KeyboardRow.defaultProps = {
 };
 
 KeyboardRow.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.string),
-  handleStateChange: PropTypes.func,
-};
-
-const KeyboardLastRow = ({ handleStateChange, data }) => (
-  <tr>
-    <td colSpan="2">
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[0]} />
-    </td>
-    <td>
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[1]} />
-    </td>
-    <td className="orange">
-      <KeyButton handleStateChange={handleStateChange} keyValue={data[2]} />
-    </td>
-  </tr>
-);
-
-KeyboardLastRow.defaultProps = {
-  data: [],
-  handleStateChange: () => {},
-};
-
-KeyboardLastRow.propTypes = {
   data: PropTypes.arrayOf(PropTypes.string),
   handleStateChange: PropTypes.func,
 };
