@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Calculator.css';
-import KeyboardRow from './KeyboardRow';
-import KeyboardLastRow from './KeyboardLastRow';
+import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [calc, setCalc] = useState({
@@ -29,6 +29,84 @@ const Calculator = () => {
       </tbody>
     </table>
   );
+};
+
+const KeyboardRow = ({ handleStateChange, data, calc }) => (
+  <tr>
+    <td>
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[0]} />
+    </td>
+    <td>
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[1]} />
+    </td>
+    <td>
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[2]} />
+    </td>
+    <td className="orange">
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[3]} />
+    </td>
+  </tr>
+);
+
+KeyboardRow.defaultProps = {
+  data: [],
+  handleStateChange: () => {},
+  calc: {},
+};
+
+KeyboardRow.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.string),
+  handleStateChange: PropTypes.func,
+  calc: PropTypes.objectOf(PropTypes.string),
+};
+
+const KeyboardLastRow = ({ handleStateChange, data, calc }) => (
+  <tr>
+    <td colSpan="2">
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[0]} />
+    </td>
+    <td>
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[1]} />
+    </td>
+    <td className="orange">
+      <KeyButton handleStateChange={handleStateChange} calc={calc} keyValue={data[2]} />
+    </td>
+  </tr>
+);
+
+KeyboardLastRow.defaultProps = {
+  data: [],
+  handleStateChange: () => {},
+  calc: {},
+};
+
+KeyboardLastRow.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.string),
+  handleStateChange: PropTypes.func,
+  calc: PropTypes.objectOf(PropTypes.string),
+};
+
+const KeyButton = ({ keyValue, handleStateChange, calc }) => (
+  <button
+    type="button"
+    onClick={(event) => {
+      handleStateChange(calculate(calc, event.target.textContent));
+    }}
+  >
+    {keyValue}
+  </button>
+);
+
+KeyButton.defaultProps = {
+  keyValue: '',
+  handleStateChange: () => {},
+  calc: {},
+};
+
+KeyButton.propTypes = {
+  keyValue: PropTypes.string,
+  handleStateChange: PropTypes.func,
+  calc: PropTypes.objectOf(PropTypes.string),
 };
 
 export default Calculator;
