@@ -17,20 +17,23 @@ const Calculator = () => {
   const { total, next, operation } = calc;
   return (
     <UserContext.Provider value={calc}>
-      <table>
-        <thead>
-          <tr>
-            <th className="total" colSpan="4">{ next || operation || total || 0 }</th>
-          </tr>
-        </thead>
-        <tbody>
-          <KeyboardRow handleStateChange={handleStateChange} data={['AC', '+/-', '%', '÷']} />
-          <KeyboardRow handleStateChange={handleStateChange} data={['7', '8', '9', 'x']} />
-          <KeyboardRow handleStateChange={handleStateChange} data={['4', '5', '6', '-']} />
-          <KeyboardRow handleStateChange={handleStateChange} data={['1', '2', '3', '+']} />
-          <KeyboardRow handleStateChange={handleStateChange} data={['0', '.', '=']} />
-        </tbody>
-      </table>
+      <section className="calculator">
+        <h2>Let&apos;s do some math!</h2>
+        <table>
+          <thead>
+            <tr>
+              <th className="total" colSpan="4">{ next || operation || total || 0 }</th>
+            </tr>
+          </thead>
+          <tbody>
+            <KeyboardRow handleStateChange={handleStateChange} data={['AC', '+/-', '%', '÷']} />
+            <KeyboardRow handleStateChange={handleStateChange} data={['7', '8', '9', 'x']} />
+            <KeyboardRow handleStateChange={handleStateChange} data={['4', '5', '6', '-']} />
+            <KeyboardRow handleStateChange={handleStateChange} data={['1', '2', '3', '+']} />
+            <KeyboardRow handleStateChange={handleStateChange} data={['0', '.', '=']} />
+          </tbody>
+        </table>
+      </section>
     </UserContext.Provider>
 
   );

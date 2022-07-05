@@ -1,6 +1,20 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: bisque;
+}
+
+.calculator {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
 table {
   width: 36%;
-  text-align: center;
+  /* text-align: center; */
   margin: 4rem auto 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
