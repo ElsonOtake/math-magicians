@@ -8,17 +8,17 @@ const Home = () => (
     <p>A mathemagician is a mathematician who is also a magician.</p>
     <p>
       {`
-      The term &quot;mathemagic&quot; is believed to have been introduced by Royal
-       Vale Heath with his 1933 book &quot;Mathemagic&quot;.
+      The term "mathemagic" is believed to have been introduced by Royal
+       Vale Heath with his 1933 book "Mathemagic".
       `}
     </p>
     <p>
       {`
-      The name &quot;mathemagician&quot; was probably first applied to Martin Gardner, 
+      The name "mathemagician" was probably first applied to Martin Gardner, 
       but has since been used to describe many mathematician/magicians, including 
       Arthur T. Benjamin, Persi Diaconis, and Colm Mulcahy. Diaconis has 
-      suggested that the reason so many mathematicians are magicians is that &quot;inventing 
-      a magic trick and inventing a theorem are very similar activities.&quot;
+      suggested that the reason so many mathematicians are magicians is that "inventing 
+      a magic trick and inventing a theorem are very similar activities."
       `}
     </p>
     <p>
