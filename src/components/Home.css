@@ -1,0 +1,23 @@
+main {
+  width: 80%;
+  margin: 2rem 10%;
+}
+
+header, h4, p {
+  text-align: left;
+}
+
+header {
+  font-size: 2rem;
+  color: blue;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+  line-height: 2rem;
+  color: black;
+}
