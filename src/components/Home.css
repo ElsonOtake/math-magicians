@@ -3,7 +3,9 @@ main {
   margin: 2rem 10%;
 }
 
-header, h4, p {
+header,
+h4,
+p {
   text-align: left;
 }
 
