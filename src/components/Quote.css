@@ -1,0 +1,15 @@
+section h2, 
+section h3, 
+section p {
+  text-align: center;
+}
+
+section h2 {
+  margin: 5rem 2rem 2rem;
+  color: blue;
+}
+
+section p {
+  margin-top: 5rem;
+  color: red;
+}

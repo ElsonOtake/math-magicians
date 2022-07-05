@@ -1,4 +1,5 @@
 import React from 'react';
+import './Quote.css';
 
 const Quote = () => {
   const quotes = [
@@ -47,14 +48,15 @@ const Quote = () => {
   const quoteNumber = Math.floor(Math.random() * 10);
 
   return (
-    <>
-      <h1>
-        {quotes[quoteNumber].quote}
-      </h1>
+    <section>
       <h2>
-        {quotes[quoteNumber].author}
+        {quotes[quoteNumber].quote}
       </h2>
-    </>
+      <h3>
+        {quotes[quoteNumber].author}
+      </h3>
+      <p>Refresh your screen to read a new quote</p>
+    </section>
 
   );
 };
