@@ -9,5 +9,6 @@ describe('Home', () => {
     expect(screen.getByText('Welcome to our page')).toBeInTheDocument();
     expect(screen.getByText(/Wikipedia/)).toBeInTheDocument();
     expect(screen.getByText(/Digitopolis/)).toBeInTheDocument();
+    expect(screen.debug()).toMatchSnapshot();
   });
 });
