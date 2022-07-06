@@ -5,6 +5,8 @@ import Home from '../components/Home.js';
 describe('Home', () => {
   test('renders Home component', () => {
     render(<Home />);
-    screen.debug();
+    screen.getByText('Welcome to our page');
+    screen.getByText(/Wikipedia/);
+    screen.getByText(/Digitopolis/);
   });
 });
