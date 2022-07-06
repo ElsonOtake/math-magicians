@@ -7,5 +7,7 @@ describe('Quote', () => {
   test('renders Quote component', () => {
     render(<Quote />);
     expect(screen.getByText('Refresh your screen to read a new quote')).toBeInTheDocument();
+    expect(screen.getByText('Refresh your screen to read a new quote')).toBeVisible();
+    expect(screen.getByText('Refresh your screen to read a new quote')).not.toHaveClass();
   });
 });
