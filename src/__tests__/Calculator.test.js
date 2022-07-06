@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import App from '../components/Calculator.js';
+import Calculator from '../components/Calculator.js';
 
 describe('Calculator', () => {
   test('renders Calculator component', () => {
-    render(<App />);
+    render(<Calculator />);
     expect(screen.getByRole('table')).toBeInTheDocument();
     expect(screen.getByRole('table')).toBeVisible();
     expect(screen.queryByText(/Todo List React/)).toBeNull();
