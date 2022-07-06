@@ -7,12 +7,13 @@ describe('Calculator', () => {
   test('renders Calculator component', () => {
     render(<App />);
     expect(screen.getByRole('table')).toBeInTheDocument();
+    expect(screen.getByRole('table')).toBeVisible();
     expect(screen.queryByText(/Todo List React/)).toBeNull();
     expect(screen.getByText(/Let's do some math!/)).toBeTruthy();
-    expect(screen.getByRole('table')).toBeVisible();
+    expect(screen.getByRole('heading')).toBeInTheDocument();
+    expect(screen.getByRole('heading')).toBeVisible();
     const total = screen.getByRole('columnheader');
-    screen.debug(total);
     fireEvent.click(screen.getByText('5'));
-    screen.debug(total);
+    expect(screen.debug(total)).toMatchSnapshot();
   });
 });
