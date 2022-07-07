@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NoPage renders NoPage component 1`] = `undefined`;
+exports[`Tests for NoPage component Check for the snapshot of debug 1`] = `undefined`;
