@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import NoPage from '../components/NoPage.js';
+import NoPage from '../components/NoPage';
 
 describe('NoPage', () => {
   test('renders NoPage component', () => {

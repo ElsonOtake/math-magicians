@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Quote from '../components/Quote.js';
+import Quote from '../components/Quote';
 
 describe('Quote', () => {
   test('renders Quote component', () => {

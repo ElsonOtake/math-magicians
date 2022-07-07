@@ -2,11 +2,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Layout from '../components/Layout.js';
+import Layout from '../components/Layout';
 
 describe('Layout', () => {
   test('renders Layout component', () => {
-    render(<Layout />, {wrapper: BrowserRouter});
+    render(<Layout />, { wrapper: BrowserRouter });
     expect(screen.getByRole('navigation')).toBeInTheDocument();
     expect(screen.getByRole('navigation')).toBeVisible();
     expect(screen.getByRole('navigation')).not.toHaveClass();
