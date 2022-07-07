@@ -13,6 +13,7 @@ describe('Layout', () => {
     expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(screen.getByRole('heading')).toBeVisible();
     expect(screen.getByRole('heading')).not.toHaveClass();
+    expect(screen.getByRole('heading')).toHaveTextContent('Math Magicians');
     expect(screen.getByRole('list')).toBeInTheDocument();
     expect(screen.getByRole('list')).toBeVisible();
     expect(screen.getByRole('list')).not.toHaveClass();
