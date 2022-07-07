@@ -55,13 +55,19 @@ Cloning a repository
 - run `npm run start` to start the application locally.
 
 
-## Author
+## Authors
 
 👤 **Elson Otake**
 
-- GitHub: [@elsonotake](https://github.com/elsonotake)
+- GitHub: [elsonotake](https://github.com/elsonotake)
 - Twitter: [@elsonotake](https://twitter.com/elsonotake)
 - LinkedIn: [Elson Otake](https://linkedin.com/in/elson-otake-0b5b9138)
+
+👤 **David Verde**
+
+- GitHub: [David-Verde](https://github.com/David-Verde)
+- Twitter: [@UnyieldingOne](https://twitter.com/UnyieldingOne)
+- LinkedIn: [David Verde](https://www.linkedin.com/in/david-verde-3349b114b/)
 
 
 ## 🤝 Contributing
