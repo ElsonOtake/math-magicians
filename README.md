@@ -17,7 +17,8 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://elsonotake.github.io/math-magicians/)
+[Netlify](https://62c745f207b6cc007b9d4e73--elsonotake-math-magicians.netlify.app)
+[Heroku](https://mathematicsmagicians.herokuapp.com/)
 
 
 ## Getting Started
