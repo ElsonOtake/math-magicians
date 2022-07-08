@@ -18,7 +18,7 @@
 ## Live Demo (if available)
 
 [Netlify](https://62c745f207b6cc007b9d4e73--elsonotake-math-magicians.netlify.app)
-[Heroku](https://elsonotake-mathmagicians.herokuapp.com/)
+[Heroku](https://elsonotake-math-magicians.herokuapp.com/)
 
 
 ## Getting Started
