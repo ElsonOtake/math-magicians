@@ -17,9 +17,9 @@
 
 ## Live Demo (if available)
 
-[Netlify](https://62c745f207b6cc007b9d4e73--elsonotake-math-magicians.netlify.app)
+[Live Demo (Netlify)](https://elsonotake-math-magicians.netlify.app/)
 
-[Heroku](https://elsonotake-math-magicians.herokuapp.com/)
+[Live Demo (Heroku)](https://elsonotake-math-magicians.herokuapp.com/)
 
 
 ## Getting Started
@@ -63,7 +63,7 @@ Cloning a repository
 
 - GitHub: [elsonotake](https://github.com/elsonotake)
 - Twitter: [@elsonotake](https://twitter.com/elsonotake)
-- LinkedIn: [Elson Otake](https://linkedin.com/in/elson-otake-0b5b9138)
+- LinkedIn: [elsonotake](https://linkedin.com/in/elsonotake)
 
 👤 **David Verde**
 
@@ -93,4 +93,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/ElsonOtake/) licensed.
