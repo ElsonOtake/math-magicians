@@ -3,7 +3,6 @@
 }
 
 body {
-  /* background-color: bisque; */
   background: #e59866;
   background: linear-gradient(to left, #fbeee6, #dc7633 85%, #a04000);
 }
@@ -16,8 +15,6 @@ body {
 
 table {
   width: 36%;
-
-  /* text-align: center; */
   margin: 4rem auto 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
