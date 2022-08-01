@@ -3,7 +3,9 @@
 }
 
 body {
-  background-color: bisque;
+  /* background-color: bisque; */
+  background: #e59866;
+  background: linear-gradient(to left, #fbeee6, #dc7633 85%, #a04000);
 }
 
 .calculator {
