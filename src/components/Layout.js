@@ -8,7 +8,7 @@ const Layout = () => (
       <h1>Math Magicians</h1>
       <ul>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/calculator">Calculator</Link>

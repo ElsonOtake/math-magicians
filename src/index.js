@@ -11,13 +11,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <Layout />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/calculator" element={<App />} />
-          <Route path="/quote" element={<Quote />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<App />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </Router>
   </React.StrictMode>,
