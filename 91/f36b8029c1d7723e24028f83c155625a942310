@@ -1,0 +1,21 @@
+package.json
+  s_0c8fc9dbbd6190::t_707247c1609e7c 4
+public/_redirects
+  s_0c8fc9dbbd6190::t_707247c1609e7c 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "91f36b8029c1d7723e24028f83c155625a942310",
+  "prompts": {},
+  "sessions": {
+    "s_0c8fc9dbbd6190": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17948-6abc-74b0-9f39-79d753ff6ec0",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Elson Otake <elsonotake@yahoo.com.br>"
+    }
+  }
+}
