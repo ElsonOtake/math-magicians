@@ -19,7 +19,7 @@ const operate = (numberOne, numberTwo, operation) => {
       return "Can't divide by 0.";
     }
   }
-  if (operation === '%') {
+  if (operation === 'mod') {
     try {
       return one.mod(two).toString();
     } catch (err) {

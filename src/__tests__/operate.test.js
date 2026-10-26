@@ -17,9 +17,9 @@ describe('operate functionality', () => {
     expect(operate(2, 0, '÷')).toBe("Can't divide by 0.");
   });
   test('modulus two values', () => {
-    expect(operate(10, 4, '%')).toBe('2');
+    expect(operate(10, 4, 'mod')).toBe('2');
   });
   test('modulus by zero', () => {
-    expect(operate(10, 0, '%')).toBe("Can't find modulo as can't divide by 0.");
+    expect(operate(10, 0, 'mod')).toBe("Can't find modulo as can't divide by 0.");
   });
 });
