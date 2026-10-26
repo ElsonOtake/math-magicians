@@ -1,0 +1,26 @@
+src/logic/operate.js
+  s_0c8fc9dbbd6190::t_e567c540b1c82a 22
+src/components/Calculator.css
+  s_0c8fc9dbbd6190::t_1533e6648fe914 38,56,61-62
+  s_0c8fc9dbbd6190::t_68cec7badd9f55 25,54-55
+src/__tests__/operate.test.js
+  s_0c8fc9dbbd6190::t_e567c540b1c82a 20,23
+src/components/Calculator.js
+  s_0c8fc9dbbd6190::t_e567c540b1c82a 29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "24a1926e10041465b5a969974529c079b6c67fcb",
+  "prompts": {},
+  "sessions": {
+    "s_0c8fc9dbbd6190": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17948-6abc-74b0-9f39-79d753ff6ec0",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Elson Otake <elsonotake@yahoo.com.br>"
+    }
+  }
+}
