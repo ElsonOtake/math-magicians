@@ -26,7 +26,7 @@ const Calculator = () => {
             </tr>
           </thead>
           <tbody>
-            <KeyboardRow handleStateChange={handleStateChange} data={['AC', '+/-', '%', '÷']} />
+            <KeyboardRow handleStateChange={handleStateChange} data={['AC', '+/-', 'mod', '÷']} />
             <KeyboardRow handleStateChange={handleStateChange} data={['7', '8', '9', 'x']} />
             <KeyboardRow handleStateChange={handleStateChange} data={['4', '5', '6', '-']} />
             <KeyboardRow handleStateChange={handleStateChange} data={['1', '2', '3', '+']} />
